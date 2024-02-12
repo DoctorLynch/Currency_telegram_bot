@@ -17,3 +17,12 @@ class BotLogger:
             self.logger.error(message)
         elif level == 'debug':
             self.logger.debug(message)
+
+    def log_info(self, message):
+        self.log('info', message)
+
+    def log_error(self, message):
+        self.log('error', message)
+
+    def log_debug(self, message):
+        self.log('debug', message)
