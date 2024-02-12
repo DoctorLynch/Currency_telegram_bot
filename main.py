@@ -116,4 +116,5 @@ def my_currency(message):
         bot.register_next_step_handler(message, my_currency)
 
 
-bot.polling(none_stop=True) # для постоянной работы бота
+if __name__ == '__main__':
+    bot.polling(none_stop=True) # для постоянной работы бота
